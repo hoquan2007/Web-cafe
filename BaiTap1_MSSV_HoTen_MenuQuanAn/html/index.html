@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thực đơn Mộc Nhiên Coffee - cà phê, trà và bánh ngọt được chuẩn bị mỗi ngày.">
+    <title>Mộc Nhiên Coffee | Thực đơn</title>
+    
+    <!-- Google Fonts - Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Lora for headings, Be Vietnam Pro for body -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- ======================================
+         HEADER
+    ====================================== -->
+    <header class="header" id="header">
+        <div class="header__top">
+            <a href="#header" class="logo" aria-label="Mộc Nhiên Coffee - Trang chủ">
+                <img src="../images/logomain.jpg" alt="Logo Mộc Nhiên Coffee" class="logo__image">
+            </a>
+            <div class="header__brand">
+                <h1 class="header__title">MỘC NHIÊN COFFEE</h1>
+                <p class="header__slogan">Một chút bình yên trong từng tách cà phê.</p>
+            </div>
+        </div>
+        
+        <nav class="nav" aria-label="Điều hướng chính">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#header" class="nav__link">Trang chủ</a></li>
+                <li class="nav__item"><a href="#menu" class="nav__link">Thực đơn</a></li>
+                <li class="nav__item"><a href="#promotion" class="nav__link">Khuyến mãi</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">Về chúng tôi</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ======================================
+         HERO SECTION
+    ====================================== -->
+    <section class="hero" id="hero">
+        <div class="hero__background"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__decoration">
+            <span class="hero__decoration-line"></span>
+            <span class="hero__decoration-circle"></span>
+        </div>
+        <div class="hero__content">
+            <span class="hero__label">MỘC NHIÊN • SPECIALTY COFFEE</span>
+            <h2 class="hero__title">Hương vị đánh thức những khoảng lặng.</h2>
+            <p class="hero__description">
+                Cà phê được tuyển chọn từ những vùng nguyên liệu Việt Nam,
+                rang mới mỗi ngày và pha bằng tất cả sự tận tâm.
+            </p>
+            <div class="hero__buttons">
+                <a href="#menu" class="btn btn--primary">Khám phá thực đơn</a>
+                <a href="#about" class="btn btn--secondary">Về Mộc Nhiên</a>
+            </div>
+            <span class="hero__badge">Rang mới mỗi ngày</span>
+        </div>
+    </section>
+
+    <!-- ======================================
+         INFO BAR
+    ====================================== -->
+    <section class="info-bar">
+        <div class="container">
+            <div class="info-bar__grid">
+                <div class="info-bar__item">
+                    <span class="info-bar__number">01</span>
+                    <span class="info-bar__text">Cà phê tuyển chọn</span>
+                </div>
+                <div class="info-bar__item">
+                    <span class="info-bar__number">02</span>
+                    <span class="info-bar__text">Rang mới mỗi ngày</span>
+                </div>
+                <div class="info-bar__item">
+                    <span class="info-bar__number">03</span>
+                    <span class="info-bar__text">Không gian thư giãn</span>
+                </div>
+                <div class="info-bar__item">
+                    <span class="info-bar__number">04</span>
+                    <span class="info-bar__text">08:00 — 22:30</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================
+         ABOUT SECTION
+    ====================================== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__content">
+                    <span class="section-eyebrow">Câu chuyện của chúng tôi</span>
+                    <h2 class="section-title">Cà phê ngon bắt đầu từ những điều giản dị.</h2>
+                    <p class="section-description">
+                        Mộc Nhiên ra đời với mong muốn tạo nên một nơi mà mọi người
+                        có thể tạm rời nhịp sống vội vàng, thưởng thức một ly cà phê
+                        được pha chỉn chu và dành thời gian cho những điều quan trọng.
+                    </p>
+                    <div class="about__stats">
+                        <div class="stat">
+                            <span class="stat__number">05+</span>
+                            <span class="stat__label">Năm đồng hành</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">20+</span>
+                            <span class="stat__label">Món đặc trưng</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">100%</span>
+                            <span class="stat__label">Hạt cà phê Việt Nam</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__image">
+                    <img src="../images/about-cafe.jpg" alt="Không gian quán Mộc Nhiên Coffee" class="about__img" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================
+         MAIN MENU AREA
+    ====================================== -->
+    <main class="main-layout" id="menu">
+        <div class="container">
+            <!-- Menu Navigation / Category -->
+            <div class="section-header">
+                <span class="section-eyebrow">Thực đơn</span>
+                <h2 class="section-title">Khám phá hương vị</h2>
+                <p class="section-description">
+                    Những món được pha chế và chuẩn bị mỗi ngày từ nguyên liệu
+                    được tuyển chọn cẩn thận.
+                </p>
+            </div>
+            
+            <div class="category-pills">
+                <a href="#coffee" class="category-pill category-pill--active">Tất cả</a>
+                <a href="#coffee" class="category-pill">Cà phê</a>
+                <a href="#tea" class="category-pill">Trà</a>
+                <a href="#dessert" class="category-pill">Bánh ngọt</a>
+                <a href="#food" class="category-pill">Món nhẹ</a>
+            </div>
+
+            <div class="menu-wrapper">
+                <!-- Menu Content -->
+                <div class="menu-content">
+                    <!-- SECTION 1: CÀ PHÊ ĐẶC TRƯNG -->
+                    <section class="menu-section" id="coffee">
+                        <h2 class="menu-section__title">Cà phê đặc trưng</h2>
+                        <p class="menu-section__subtitle">Bắt đầu ngày mới bằng hương vị quen thuộc.</p>
+                        
+                        <div class="menu-grid">
+                            <!-- 1. Cà Phê Sữa Đá -->
+                            <article class="menu-card">
+                                <div class="menu-card__image-wrapper">
+                                    <img src="../images/coffee-milk-vietnamese.jpg" alt="Cà Phê Sữa Đá Mộc Nhiên" class="menu-card__image" loading="lazy">
+                                    <span class="menu-card__badge">Bestseller</span>
+                                </div>
+                                <div class="menu-card__content">
+                                    <h3 class="menu-card__title">Cà Phê Sữa Đá</h3>
+                                    <p class="menu-card__description">Cà phê Robusta đậm vị kết hợp sữa đặc truyền thống.</p>
+                                </div>
+                                <div class="menu-card__footer">
+                                    <span class="price">35.000đ</span>
+                                    <button type="button" class="order-btn">Đặt món</button>
+                                </div>
+                            </article>
+
+                            <!-- 2. Bạc Xỉu -->
+                            <article class="menu-card">
+                                <div class="menu-card__image-wrapper">
+                                    <img src="../images/bac-xiu.jpg" alt="Bạc Xỉu Mộc Nhiên" class="menu-card__image" loading="lazy">
+                                </div>
+                                <div class="menu-card__content">
+                                    <h3 class="menu-card__title">Bạc Xỉu</h3>
+                                    <p class="menu-card__description">Vị sữa béo nhẹ hòa cùng espresso thơm dịu.</p>
+                                </div>
+                                <div class="menu-card__footer">
+                                    <span class="price">39.000đ</span>
+                                    <button type="button" class="order-btn">Đặt món</button>
+                                </div>
+                            </article>
+
+                            <!-- 3. Cà Phê Muối -->
+                            <article class="menu-card">
+                                <div class="menu-card__image-wrapper">
+                                    <img src="../images/salt-coffee.jpg" alt="Cà Phê Muối Mộc Nhiên" class="menu-card__image" loading="lazy">
+                                    <span class="menu-card__badge menu-card__badge--special">Signature</span>
+                                </div>
+                                <div class="menu-card__content">
+                                    <h3 class="menu-card__title">Cà Phê Muối</h3>
+                                    <p class="menu-card__description">Lớp kem muối mềm mịn cân bằng cùng espresso đậm đà.</p>
+                                </div>
+                                <div class="menu-card__footer">
+                                    <span class="price">45.000đ</span>
+                                    <button type="button" class="order-btn">Đặt món</button>
+                                </div>
+                            </article>
+
+                            <!-- 4. Americano -->
+                            <article class="menu-card">
+                                <div class="menu-card__image-wrapper">
+                                    <img src="../images/americano.jpg" alt="Americano Mộc Nhiên" class="menu-card__image" loading="lazy">
+                                </div>
+                                <div class="menu-card__content">
+                                    <h3 class="menu-card__title">Americano</h3>
+                                    <p class="menu-card__description">Espresso pha cùng nước nóng, thanh nhẹ và tinh tế.</p>
+                                </div>
+                                <div class="menu-card__footer">
+                                    <span class="price">40.000đ</span>
+                                    <button type="button" class="order-btn">Đặt món</button>
+                                </div>
+                            </article>
+
+                            <!-- 5. Latte -->
+                            <article class="menu-card">
+                                <div class="menu-card__image-wrapper">
+                                    <img src="../images/latte.jpg" alt="Latte Mộc Nhiên" class="menu-card__image" loading="lazy">
+                                </div>
+                                <div class="menu-card__content">
+                                    <h3 class="menu-card__title">Latte</h3>
+                                    <p class="menu-card__description">Espresso hòa quyện cùng sữa nóng và lớp foam mềm.</p>
+                                </div>
+                                <div class="menu-card__footer">
+                                    <span class="price">49.000đ</span>
+                                    <button type="button" class="order-btn">Đặt món</button>
+                                </div>
+                            </article>
+
+                            <!-- 6. Cappuccino -->
+                            <article class="menu-card">
+                                <div class="menu-card__image-wrapper">
+                                    <img src="../images/cappuccino.jpg" alt="Cappuccino Mộc Nhiên" class="menu-card__image" loading="lazy">
+                                </div>
+                                <div class="menu-card__content">
+                                    <h3 class="menu-card__title">Cappuccino</h3>
+                                    <p class="menu-card__description">Cân bằng giữa espresso, sữa nóng và bọt sữa mịn.</p>
+                                </div>
+                                <div class="menu-card__footer">
+                                    <span class="price">49.000đ</span>
+                                    <button type="button" class="order-btn">Đặt món</button>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- SECTION 2: TRÀ & MATCHA -->
+                    <section class="menu-section" id="tea">
+                        <h2 class="menu-section__title">Trà & Matcha</h2>
+                        
+                        <div class="menu-grid">
+                            <!-- 1. Matcha Latte -->
+                            <article class="menu-card">
+                                <div class="menu-card__image-wrapper">
+                                    <img src="../images/matcha-latte.jpg" alt="Matcha Latte Mộc Nhiên" class="menu-card__image" loading="lazy">
+                                </div>
+                                <div class="menu-card__content">
+                                    <h3 class="menu-card__title">Matcha Latte</h3>
+                                    <p class="menu-card__description">Matcha Nhật Bản pha cùng sữa nóng, vị đắng nhẹ và kem ngọt.</p>
+                                </div>
+                                <div class="menu-card__footer">
+                                    <span class="price">49.000đ</span>
+                                    <button type="button" class="order-btn">Đặt món</button>
+                                </div>
+                            </article>
+
+                            <!-- 2. Peach Tea -->
+                            <article class="menu-card">
+                                <div class="menu-card__image-wrapper">
+                                    <img src="../images/peach-tea.jpg" alt="Peach Tea Mộc Nhiên" class="menu-card__image" loading="lazy">
+                                </div>
+                                <div class="menu-card__content">
+                                    <h3 class="menu-card__title">Peach Tea</h3>
+                                    <p class="menu-card__description">Trà đào thanh mát với lát đào tươi và đá viên.</p>
+                                </div>
+                                <div class="menu-card__footer">
+                                    <span class="price">45.000đ</span>
+                                    <button type="button" class="order-btn">Đặt món</button>
+                                </div>
+                            </article>
+
+                            <!-- 3. Trà Vải Hoa Hồng -->
+                            <article class="menu-card">
+                                <div class="menu-card__image-wrapper">
+                                    <img src="../images/lychee-tea.jpg" alt="Trà Vải Hoa Hồng Mộc Nhiên" class="menu-card__image" loading="lazy">
+                                </div>
+                                <div class="menu-card__content">
+                                    <h3 class="menu-card__title">Trà Vải Hoa Hồng</h3>
+                                    <p class="menu-card__description">Hương vải ngọt dịu kết hợp cùng hoa hồng thơm mát.</p>
+                                </div>
+                                <div class="menu-card__footer">
+                                    <span class="price">49.000đ</span>
+                                    <button type="button" class="order-btn">Đặt món</button>
+                                </div>
+                            </article>
+
+                            <!-- 4. Trà Oolong Kem Sữa -->
+                            <article class="menu-card">
+                                <div class="menu-card__image-wrapper">
+                                    <img src="../images/oolong-milk-tea.jpg" alt="Trà Oolong Kem Sữa Mộc Nhiên" class="menu-card__image" loading="lazy">
+                                </div>
+                                <div class="menu-card__content">
+                                    <h3 class="menu-card__title">Trà Oolong Kem Sữa</h3>
+                                    <p class="menu-card__description">Trà Oolong Đài Loan với lớp kem sữa béo ngậy.</p>
+                                </div>
+                                <div class="menu-card__footer">
+                                    <span class="price">52.000đ</span>
+                                    <button type="button" class="order-btn">Đặt món</button>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- SECTION 3: BÁNH NGỌT -->
+                    <section class="menu-section" id="dessert">
+                        <h2 class="menu-section__title">Bánh ngọt mỗi ngày</h2>
+                        
+                        <div class="menu-grid">
+                            <!-- 1. Tiramisu -->
+                            <article class="menu-card">
+                                <div class="menu-card__image-wrapper">
+                                    <img src="../images/tiramisu.jpg" alt="Tiramisu Mộc Nhiên" class="menu-card__image" loading="lazy">
+                                </div>
+                                <div class="menu-card__content">
+                                    <h3 class="menu-card__title">Tiramisu</h3>
+                                    <p class="menu-card__description">Bánh tiramisu Ý với lớp cà phê và mascarpone mịn màng.</p>
+                                </div>
+                                <div class="menu-card__footer">
+                                    <span class="price">55.000đ</span>
+                                    <button type="button" class="order-btn">Đặt món</button>
+                                </div>
+                            </article>
+
+                            <!-- 2. Croissant Bơ -->
+                            <article class="menu-card">
+                                <div class="menu-card__image-wrapper">
+                                    <img src="../images/croissant.jpg" alt="Croissant Bơ Mộc Nhiên" class="menu-card__image" loading="lazy">
+                                </div>
+                                <div class="menu-card__content">
+                                    <h3 class="menu-card__title">Croissant Bơ</h3>
+                                    <p class="menu-card__description">Bánh croissant giòn xốp với 72 lớp bơ Pháp.</p>
+                                </div>
+                                <div class="menu-card__footer">
+                                    <span class="price">39.000đ</span>
+                                    <button type="button" class="order-btn">Đặt món</button>
+                                </div>
+                            </article>
+
+                            <!-- 3. Basque Cheesecake -->
+                            <article class="menu-card">
+                                <div class="menu-card__image-wrapper">
+                                    <img src="../images/basque-cheesecake.jpg" alt="Basque Cheesecake Mộc Nhiên" class="menu-card__image" loading="lazy">
+                                </div>
+                                <div class="menu-card__content">
+                                    <h3 class="menu-card__title">Basque Cheesecake</h3>
+                                    <p class="menu-card__description">Cheesecake Basque caramel hóa với lớp vỏ nướng vàng.</p>
+                                </div>
+                                <div class="menu-card__footer">
+                                    <span class="price">59.000đ</span>
+                                    <button type="button" class="order-btn">Đặt món</button>
+                                </div>
+                            </article>
+
+                            <!-- 4. Chocolate Brownie -->
+                            <article class="menu-card">
+                                <div class="menu-card__image-wrapper">
+                                    <img src="../images/brownie.jpg" alt="Chocolate Brownie Mộc Nhiên" class="menu-card__image" loading="lazy">
+                                </div>
+                                <div class="menu-card__content">
+                                    <h3 class="menu-card__title">Chocolate Brownie</h3>
+                                    <p class="menu-card__description">Brownie socola Bỉ đậm đà với lớp chocolat ganache.</p>
+                                </div>
+                                <div class="menu-card__footer">
+                                    <span class="price">45.000đ</span>
+                                    <button type="button" class="order-btn">Đặt món</button>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- SECTION 4: MÓN NHẸ -->
+                    <section class="menu-section" id="food">
+                        <h2 class="menu-section__title">Món nhẹ</h2>
+                        
+                        <div class="menu-grid menu-grid--smaller">
+                            <!-- 1. Croissant Ham & Cheese -->
+                            <article class="menu-card">
+                                <div class="menu-card__image-wrapper">
+                                    <img src="../images/ham-cheese-croissant.jpg" alt="Croissant Ham & Cheese Mộc Nhiên" class="menu-card__image" loading="lazy">
+                                </div>
+                                <div class="menu-card__content">
+                                    <h3 class="menu-card__title">Croissant Ham & Cheese</h3>
+                                    <p class="menu-card__description">Croissant bơ với nhân ham Pháp và phô mai Emmental.</p>
+                                </div>
+                                <div class="menu-card__footer">
+                                    <span class="price">59.000đ</span>
+                                    <button type="button" class="order-btn">Đặt món</button>
+                                </div>
+                            </article>
+
+                            <!-- 2. Chicken Sandwich -->
+                            <article class="menu-card">
+                                <div class="menu-card__image-wrapper">
+                                    <img src="../images/chicken-sandwich.jpg" alt="Chicken Sandwich Mộc Nhiên" class="menu-card__image" loading="lazy">
+                                </div>
+                                <div class="menu-card__content">
+                                    <h3 class="menu-card__title">Chicken Sandwich</h3>
+                                    <p class="menu-card__description">Bánh mì với ức gà nướng, rau xanh và sốt mè rang.</p>
+                                </div>
+                                <div class="menu-card__footer">
+                                    <span class="price">65.000đ</span>
+                                    <button type="button" class="order-btn">Đặt món</button>
+                                </div>
+                            </article>
+
+                            <!-- 3. Toast Avocado -->
+                            <article class="menu-card">
+                                <div class="menu-card__image-wrapper">
+                                    <img src="../images/avocado-toast.jpg" alt="Toast Avocado Mộc Nhiên" class="menu-card__image" loading="lazy">
+                                </div>
+                                <div class="menu-card__content">
+                                    <h3 class="menu-card__title">Toast Avocado</h3>
+                                    <p class="menu-card__description">Bánh mì nướng với bơ tươi, trứng poached và hạt sesame.</p>
+                                </div>
+                                <div class="menu-card__footer">
+                                    <span class="price">69.000đ</span>
+                                    <button type="button" class="order-btn">Đặt món</button>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- ASIDE -->
+                <aside class="aside">
+                    <!-- BOX 1: Được yêu thích tuần này -->
+                    <div class="aside__box aside__box--featured">
+                        <h4 class="aside__box-title">Được yêu thích tuần này</h3>
+                        <div class="top-items">
+                            <div class="top-item">
+                                <span class="top-item__number">01</span>
+                                <img src="../images/salt-coffee.jpg" alt="Cà Phê Muối" class="top-item__image" loading="lazy">
+                                <div class="top-item__info">
+                                    <span class="top-item__name">Cà Phê Muối</span>
+                                    <span class="top-item__price">45.000đ</span>
+                                </div>
+                            </div>
+                            <div class="top-item">
+                                <span class="top-item__number">02</span>
+                                <img src="../images/matcha-latte.jpg" alt="Matcha Latte" class="top-item__image" loading="lazy">
+                                <div class="top-item__info">
+                                    <span class="top-item__name">Matcha Latte</span>
+                                    <span class="top-item__price">49.000đ</span>
+                                </div>
+                            </div>
+                            <div class="top-item">
+                                <span class="top-item__number">03</span>
+                                <img src="../images/tiramisu.jpg" alt="Tiramisu" class="top-item__image" loading="lazy">
+                                <div class="top-item__info">
+                                    <span class="top-item__name">Tiramisu</span>
+                                    <span class="top-item__price">55.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BOX 2: Khuyến mãi -->
+                    <div class="aside__box aside__box--promo" id="promotion">
+                        <span class="promo-badge">20% OFF</span>
+                        <h4 class="aside__box-title aside__box-title--light">Một chút ngọt ngào</h3>
+                        <p class="aside__box-text">
+                            Giảm 20% bánh ngọt khi mua cùng bất kỳ thức uống size L.
+                        </p>
+                        <a href="#promotion" class="btn btn--promo">Xem ưu đãi</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- ======================================
+         PROMOTION BANNER
+    ====================================== -->
+    <section class="promo-banner">
+        <div class="promo-banner__background"></div>
+        <div class="promo-banner__overlay"></div>
+        <div class="promo-banner__content">
+            <h2 class="promo-banner__title">
+                Chậm lại một chút.<br>
+                Cà phê đã sẵn sàng.
+            </h2>
+            <p class="promo-banner__description">
+                Mỗi ngày tại Mộc Nhiên là một cơ hội để thưởng thức,
+                trò chuyện và tìm lại một chút bình yên.
+            </p>
+            <a href="#contact" class="btn btn--banner">Khám phá Mộc Nhiên</a>
+        </div>
+    </section>
+
+    <!-- ======================================
+         EXPERIENCE / TESTIMONIAL
+    ====================================== -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Trải nghiệm</span>
+                <h2 class="section-title">Không chỉ là một tách cà phê</h2>
+            </div>
+            <div class="experience__grid">
+                <div class="experience__card">
+                    <div class="experience__icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
+                            <ellipse cx="24" cy="24" rx="10" ry="14" stroke="currentColor" stroke-width="2" transform="rotate(-20 24 24)"/>
+                        </svg>
+                    </div>
+                    <h3 class="experience__card-title">Hạt cà phê tuyển chọn</h3>
+                    <p class="experience__card-text">Tuyển chọn từ những vùng nguyên liệu nổi tiếng của Việt Nam.</p>
+                </div>
+                <div class="experience__card">
+                    <div class="experience__icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4 L24 20 M24 20 L14 44 M24 20 L34 44 M14 44 L34 44" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="24" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="experience__card-title">Pha chế thủ công</h3>
+                    <p class="experience__card-text">Mỗi thức uống được pha khi khách gọi món.</p>
+                </div>
+                <div class="experience__card">
+                    <div class="experience__icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="16" width="32" height="24" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 24 L24 16 L40 24" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="16" cy="32" r="2" fill="currentColor"/>
+                            <circle cx="24" cy="32" r="2" fill="currentColor"/>
+                            <circle cx="32" cy="32" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="experience__card-title">Không gian bình yên</h3>
+                    <p class="experience__card-text">Một nơi đủ chậm để bạn tận hưởng cuộc trò chuyện.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================
+         CONTACT / STORE INFO
+    ====================================== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__grid">
+                <div class="contact__info">
+                    <span class="section-eyebrow">Ghé Mộc Nhiên</span>
+                    <h2 class="section-title">Tìm đến không gian của chúng tôi</h2>
+                    
+                    <div class="contact__details">
+                        <div class="contact__item">
+                            <span class="contact__label">Địa chỉ</span>
+                            <span class="contact__value">123 Nguyễn Văn A, TP. Hồ Chí Minh</span>
+                        </div>
+                        <div class="contact__item">
+                            <span class="contact__label">Giờ mở cửa</span>
+                            <span class="contact__value">Thứ 2 - Chủ nhật: 08:00 - 22:30</span>
+                        </div>
+                        <div class="contact__item">
+                            <span class="contact__label">Hotline</span>
+                            <span class="contact__value">0901 234 567</span>
+                        </div>
+                        <div class="contact__item">
+                            <span class="contact__label">Email</span>
+                            <span class="contact__value">hello@mocnhiencoffee.vn</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#menu" class="btn btn--primary">Xem đường đi</a>
+                </div>
+                <div class="contact__map">
+                    <img src="../images/store-photo.jpg" alt="Cửa hàng Mộc Nhiên Coffee" class="contact__store-image" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================
+         FOOTER
+    ====================================== -->
+    <footer class="footer">
+        <div class="footer__background"></div>
+        <div class="footer__content">
+            <div class="container">
+                <div class="footer__grid">
+                    <div class="footer__column footer__column--brand">
+                        <img src="../images/logomain.jpg" alt="Logo Mộc Nhiên Coffee" class="footer__logo">
+                        <h3 class="footer__brand">MỘC NHIÊN COFFEE</h3>
+                        <p class="footer__slogan">Một chút bình yên trong từng tách cà phê.</p>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__heading">Khám phá</h3>
+                        <ul class="footer__list">
+                            <li><a href="#header" class="footer__link">Trang chủ</a></li>
+                            <li><a href="#menu" class="footer__link">Thực đơn</a></li>
+                            <li><a href="#promotion" class="footer__link">Khuyến mãi</a></li>
+                            <li><a href="#about" class="footer__link">Câu chuyện</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__heading">Liên hệ</h3>
+                        <ul class="footer__list">
+                            <li class="footer__contact">123 Nguyễn Văn A, TP. HCM</li>
+                            <li class="footer__contact">0901 234 567</li>
+                            <li class="footer__contact">hello@mocnhiencoffee.vn</li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__heading">Theo dõi chúng tôi</h3>
+                        <div class="footer__social">
+                            <a href="#" class="footer__social-link" aria-label="Facebook">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="footer__social-link" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                    <circle cx="12" cy="12" r="4"/>
+                                    <circle cx="18" cy="6" r="1" fill="currentColor"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="footer__social-link" aria-label="TikTok">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p class="footer__copyright">© 2026 Mộc Nhiên Coffee. All rights reserved.</p>
+                    <p class="footer__credit">Made with care & coffee.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
